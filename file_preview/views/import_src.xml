@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="file_preview_tpl" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script src="/file_preview/static/src/js/file_preview.js" />
+        </xpath>
+    </template>
+</odoo>
+
+

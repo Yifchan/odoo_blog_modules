@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+        <record id="file_preview_action" model="ir.actions.act_window">
+                <field name="name">文件预览</field>
+                <field name="res_model">file.preview</field>
+                <field name="view_mode">tree,form</field>
+                <field name="target">current</field>
+            </record>
+
+        <!-- 主菜单定义 -->
+        <menuitem id="menu_l1_file" name="文件预览" />
+        <!-- 二级菜单 -->
+        <menuitem id="menu_l2_file_preview" name="文件预览" action="file_preview_action" parent="menu_l1_file" sequence="1" />
+    </data>
+
+</odoo>
+

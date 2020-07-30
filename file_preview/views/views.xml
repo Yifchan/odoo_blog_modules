@@ -1,0 +1,39 @@
+<odoo>
+    <data>
+        <record id="file_preview_view_tree" model="ir.ui.view">
+            <field name="name">file.preview.tree</field>
+            <field name="model">file.preview</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="file_preview_view_form" model="ir.ui.view">
+            <field name="name">file.preview.form</field>
+            <field name="model">file.preview</field>
+            <field name="arch" type="xml">
+                <form string="文件预览">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <notebook>
+                            <page string="图片">
+                                <!--<field name="img_ids" widget="Upload_skim_pdf" >-->
+                                <!--<field name="img_ids" widget="many2many_tags" />-->
+                                <field name="img_ids" widget="Upload_skim_pdf" />
+                            </page>
+                            <page string="附件">
+                                <field name="attachment_ids" widget="Upload_skim_pdf" />
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+
+
