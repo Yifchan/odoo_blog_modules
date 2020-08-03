@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+        <record id="custom_config_test_view_tree" model="ir.ui.view">
+            <field name="name">custom.config.test.tree</field>
+            <field name="model">custom.config.test</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="custom_config_test_view_form" model="ir.ui.view">
+            <field name="name">custom.config.test.form</field>
+            <field name="model">custom.config.test</field>
+            <field name="arch" type="xml">
+                <form string="自定义配置项测试">
+                    <header>
+                        <button name="bt_pop_odoo_config" type="object" string="odoo配置项" class="btn-primary" />
+                        <button name="bt_pop_custom_config" type="object" string="custom配置项" class="btn-primary" />
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="custom_config_transient_view_form" model="ir.ui.view">
+            <field name="name">custom.config.transient.form</field>
+            <field name="model">custom.config.transient</field>
+            <field name="arch" type="xml">
+                <form string="自定义配置项">
+                    <sheet>
+                        <group>
+                            <field name="test_href"/>
+                            <field name="test_user" />
+                            <field name="test_pwd" />
+                        </group>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+
+

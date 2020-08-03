@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <record id="custom_config_test_action" model="ir.actions.act_window">
+            <field name="name">自定义配置项测试</field>
+            <field name="res_model">custom.config.test</field>
+            <field name="view_mode">tree,form</field>
+            <field name="target">current</field>
+        </record>
+
+        <record id="custom_config_transient_action" model="ir.actions.act_window">
+            <field name="name">自定义配置项瞬态</field>
+            <field name="res_model">custom.config.transient</field>
+            <field name="view_mode">form</field>
+            <field name="target">current</field>
+        </record>
+
+        <!-- 主菜单定义 -->
+        <menuitem id="menu_l1_config" name="自定义配置项" />
+        <!-- 二级菜单 -->
+        <menuitem id="menu_l2_custom_config_test" name="自定义配置项测试" action="custom_config_test_action" parent="menu_l1_config" sequence="1" />
+        <menuitem id="menu_l2_custom_config_transient" name="自定义配置项" action="custom_config_transient_action" parent="menu_l1_config" sequence="2" />
+    </data>
+
+</odoo>
+

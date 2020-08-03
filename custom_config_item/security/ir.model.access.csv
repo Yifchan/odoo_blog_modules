@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_custom_config_test,custom.config.test,model_custom_config_test,base.group_user,1,1,1,1
+access_custom_config_transient,custom.config.transient,model_custom_config_transient,base.group_user,1,1,1,1
+access_custom_config_item,custom.config.item,model_custom_config_item,base.group_user,1,1,1,1
+
+
