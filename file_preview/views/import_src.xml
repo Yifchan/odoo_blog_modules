@@ -2,7 +2,7 @@
 <odoo>
     <template id="assets_backend" name="file_preview_tpl" inherit_id="web.assets_backend">
         <xpath expr="." position="inside">
-            <script src="/file_preview/static/src/js/file_preview.js" />
+            <script src="/file_preview/static/js/file_preview.js" />
         </xpath>
     </template>
 </odoo>

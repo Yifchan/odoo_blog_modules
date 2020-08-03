@@ -20,8 +20,6 @@
                         </group>
                         <notebook>
                             <page string="图片">
-                                <!--<field name="img_ids" widget="Upload_skim_pdf" >-->
-                                <!--<field name="img_ids" widget="many2many_tags" />-->
                                 <field name="img_ids" widget="Upload_skim_pdf" />
                             </page>
                             <page string="附件">
