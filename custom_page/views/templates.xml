@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="custom page assets" inherit_id="web.assets_backend">
+            <xpath expr="//script[last()]" position="after">
+                <script type="text/javascript" src="/custom_page/static/lib/wired-elements/wired-elements.bundled.min.js"></script>
+                <script type="text/javascript" src="/custom_page/static/src/js/demo.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>
