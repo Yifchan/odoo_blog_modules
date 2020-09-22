@@ -5,12 +5,7 @@
             <field name="tag">custom_page.demo</field>
         </record>
 
-        <menuitem
-                id="menu_root_custom_page"
-                name="自定义页面"
-                action="action_custom_page"
-                groups="base.group_user"
-                sequence="1"/>
+        <menuitem id="menu_root_custom_page" name="自定义页面" action="action_custom_page" groups="base.group_user" sequence="1"/>
     </data>
 </odoo>
 

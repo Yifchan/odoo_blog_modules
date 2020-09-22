@@ -8,7 +8,9 @@ odoo.define('custom_page.demo', function (require) {
     var core = require('web.core');
 
     var CustomPageDemo = AbstractAction.extend({
+        // 关联xml组件
         template: 'DemoPage',
+        // 对某个类关联click事件
         events: {'click .demo-submit': '_onSubmitClick'},
 
         _onSubmitClick: function (e) {
